@@ -1,27 +1,26 @@
 <template>
-  <div id="app">
-    <Home/>
-  </div>
+  <v-app>
+    <v-content>
+      <Home/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Home from './components/Home';
 
 export default {
   name: 'App',
-  components: {
-    Home
-  }
-}
-</script>
+  created( ) {
+    document.title = "BNA | Ozone Disinfection Systems"
+  },
 
-<style>
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-</style>
+  components: {
+    Home,
+  },
+
+  data: () => ({
+    //
+  }),
+};
+</script>
