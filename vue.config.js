@@ -4,9 +4,9 @@ module.exports = {
       "awsProfile": "default",
       "overrideEndpoint": false,
       "region": "us-west-2",
-      "bucket": "bna-website-bucket",
+      "bucket": "bna-website",
       "createBucket": false,
-      "staticHosting": true,
+      "staticHosting": false,
       "staticIndexPage": "index.html",
       "staticErrorPage": "index.html",
       "assetPath": "dist",
@@ -19,7 +19,8 @@ module.exports = {
       "uploadConcurrency": 5
     }
   },
+
   "transpileDependencies": [
     "vuetify"
-  ]
+  ],
 }

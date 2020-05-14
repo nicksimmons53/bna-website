@@ -39,9 +39,9 @@
       </v-col>
     </v-row>
 
-    <v-row class="mb-8">
+    <v-row>
       <v-col align="center">
-        <v-card max-width="600px"> 
+        <v-card max-width="1000px"> 
           <v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
           <v-divider/>
           <v-row min-height="500px">
@@ -77,15 +77,111 @@
               large 
               color="#55b236" 
               class="white--text"
-              v-on:click="showCard('p1')">
+              v-on:click="toggleCard1">
               More Details
             </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>
+    </v-row>
 
+    <v-expand-transition>
+    <v-row v-if="showProduct1">
       <v-col align="center">
-        <v-card max-width="600px">
+        <v-card max-width="1200px">
+          <v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
+          <v-divider/>
+          <v-row justify="center">
+            <v-col>
+            <v-img src="../assets/P1_Sprayer.png" max-height="500px" max-width="1200px" class="img ma-8"/>
+            </v-col>
+          </v-row>
+          <v-divider/>
+          <v-row>
+            <v-col align="start">
+              <v-card-title class="mb-2">General Information</v-card-title>
+              <v-card-subtitle class="mb-n4">
+                The 2nd generation handheld rechargeable ozone sprayer uses our lastest AOP
+                (Advanced Oxidation Process) technology. This revolutionary technology can help 
+                replace conventional chemical surface sanitizers.
+              </v-card-subtitle>
+              <v-card-subtitle class="mb-n4">
+                Simply fill the bottle with 
+                clean tap water, the device will instantly convert ordinary water into 
+                dissolved ozone and active chlorine. Dissolved ozone is well-known for its fast 
+                and powerful sanitation performance, while active chlorine enables longer 
+                lasting result. 
+              </v-card-subtitle>
+              <v-card-subtitle>
+                This ozone sprayer offers an effective, safe, and environmentally
+                friendly surface sanitation for many commercial hygiene applications.
+              </v-card-subtitle>
+            </v-col>
+            <v-divider vertical/>
+            <v-col align="start">
+              <v-card-title class="pb-0">Specifications</v-card-title>
+                <v-col cols="12">
+                  <v-simple-table class="mb-3">
+                    <template v-slot:default>
+                      <tbody>
+                        <tr>
+                          <td>Model No.</td>
+                          <td>EOS7161-P</td>
+                        </tr>                        
+                        <tr>
+                          <td>Weight</td>
+                          <td>310g (10.9oz)</td>
+                        </tr>
+                        <tr>
+                          <td>Dimensions</td>
+                          <td>Φ53 x 254.8mm</td>
+                        </tr>
+                        <tr>
+                          <td>Rechargable Battery</td>
+                          <td>Li-Polymer Battery (3.7V/1000mAh)</td>
+                        </tr>
+                        <tr>
+                          <td>Charger Input</td>
+                          <td>Input: 100-240V AC, 50/60Hz<br>Output: 5V/1A</td>
+                        </tr>
+                        <tr>
+                          <td>Concentration</td>
+                          <td>≥ 2.5 ppm</td>
+                        </tr>
+                        <tr>
+                          <td>Reservoir Size</td>
+                          <td>150ml (0.04 gal)</td>
+                        </tr>
+                        <tr>
+                          <td>Water Quaity</td>
+                          <td>Clean Tap Water<br>Mineral Water</td>
+                        </tr>
+                        <tr>
+                          <td>Water Temperature</td>
+                          <td>5 - 35&#176;C (41 - 95&#176;F)</td>
+                        </tr>
+                        <tr>
+                          <td>Ambient Temperature</td>
+                          <td>5 - 40&#176;C (41 - 104&#176;F)</td>
+                        </tr>
+                        <tr>
+                          <td>Charging Time</td>
+                          <td>50 - 60 minutes</td>
+                        </tr>
+                      </tbody>
+                    </template>
+                  </v-simple-table>
+                </v-col>
+            </v-col>
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+    </v-expand-transition>
+
+    <v-row>
+      <v-col align="center">
+        <v-card max-width="1000px">
           <v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
           <v-divider/>
           <v-row min-height="500px">
@@ -121,7 +217,7 @@
               large 
               color="#55b236" 
               class="white--text" 
-              v-on:click="showCard('p2')">
+              v-on:click="toggleCard2">
               More Details
             </v-btn>
           </v-card-actions>
@@ -130,97 +226,15 @@
     </v-row>
 
     <v-expand-transition>
-    <v-row v-if="showProduct1">
-      <v-col align="center">
-        <v-card max-width="1500px">
-          <v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
-          <v-divider/>
-          <v-row justify="center">
-            <v-img src="../assets/P1_Sprayer.png" max-height="500px" max-width="1200px" class="img ma-8"/>
-          </v-row>
-          <v-divider/>
-          <v-row>
-            <v-col align="start">
-              <v-card-title class="mb-2">General Information</v-card-title>
-              <v-card-subtitle class="mb-n4">
-                The 2nd generation handheld rechargeable ozone sprayer uses our lastest AOP
-                (Advanced Oxidation Process) technology. This revolutionary technology can help 
-                replace conventional chemical surface sanitizers.
-              </v-card-subtitle>
-              <v-card-subtitle class="mb-n4">
-                Simply fill the bottle with 
-                clean tap water, the device will instantly convert ordinary water into 
-                dissolved ozone and active chlorine. Dissolved ozone is well-known for its fast 
-                and powerful sanitation performance, while active chlorine enables longer 
-                lasting result. 
-              </v-card-subtitle>
-              <v-card-subtitle>
-                This ozone sprayer offers an effective, safe, and environmentally
-                friendly surface sanitation for many commercial hygiene applications.
-              </v-card-subtitle>
-            </v-col>
-            <v-divider vertical/>
-            <v-col align="start">
-              <v-card-title class="pb-0">Specifications</v-card-title>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Model No.</v-card-subtitle>
-                <v-card-subtitle>EOS7161-P</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Weight</v-card-subtitle>
-                <v-card-subtitle>310g (10.9oz)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Dimensions</v-card-subtitle>
-                <v-card-subtitle>Φ53 x 254.8mm</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Rechargeable Battery</v-card-subtitle>
-                <v-card-subtitle>Li-Polymer Battery (3.7V/1000mAh)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Charger Input</v-card-subtitle>
-                <v-card-subtitle>Input: 100-240V AC, 50/60Hz<br>Output: 5V/1A</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">O<sub>3</sub> Concentration</v-card-subtitle>
-                <v-card-subtitle>≥ 2.5 ppm</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Reservoir Size</v-card-subtitle>
-                <v-card-subtitle>150ml (0.04 gal)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Water Quality</v-card-subtitle>
-                <v-card-subtitle>Clean Tap Water/Mineral Water</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Water Temperature</v-card-subtitle>
-                <v-card-subtitle>5 - 35&#176;C (41 - 95&#176;F)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between">  
-                <v-card-subtitle class="mr-12">Ambient Temperature</v-card-subtitle>
-                <v-card-subtitle>5 - 40&#176;C (41 - 104&#176;F)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Charging Time</v-card-subtitle>
-                <v-card-subtitle>50 - 60 minutes</v-card-subtitle>
-              </v-row>
-            </v-col>
-          </v-row>
-        </v-card>
-      </v-col>
-    </v-row>
-    </v-expand-transition>
-
-    <v-expand-transition>
     <v-row v-if="showProduct2">
       <v-col align="center">
         <v-card max-width="1500px">
           <v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
           <v-divider/>
             <v-row justify="center">
+              <v-col>
               <v-img src="../assets/Traveler.png" max-height="500px" max-width="1200px" class="img ma-8"/>
+              </v-col>
             </v-row>
           <v-divider/>
           <v-row>
@@ -238,54 +252,62 @@
             <v-divider vertical/>
             <v-col align="start">
               <v-card-title class="pb-0">Specifications</v-card-title>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Model No.</v-card-subtitle>
-                <v-card-subtitle>EOS7160-P</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Weight</v-card-subtitle>
-                <v-card-subtitle>360g</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Dimensions</v-card-subtitle>
-                <v-card-subtitle>Φ53 x H168mm</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Rechargeable Battery</v-card-subtitle>
-                <v-card-subtitle>Li-Polymer Battery (3.7V/1000mAh)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Charger Input</v-card-subtitle>
-                <v-card-subtitle>Input: 100-240V AC, 50/60Hz<br>Output: 5V/1A</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">O<sub>3</sub> Concentration</v-card-subtitle>
-                <v-card-subtitle>2.0 ppm</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Reservoir Size</v-card-subtitle>
-                <v-card-subtitle>150ml (0.04 gal)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Water Quality</v-card-subtitle>
-                <v-card-subtitle>Clean Tap Water/Mineral Water</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Water Temperature</v-card-subtitle>
-                <v-card-subtitle>5 - 35&#176;C (41 - 95&#176;F)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12 mb-n2" justify="space-between">  
-                <v-card-subtitle class="mr-12">Ambient Temperature</v-card-subtitle>
-                <v-card-subtitle>5 - 40&#176;C (41 - 104&#176;F)</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Charging Time</v-card-subtitle>
-                <v-card-subtitle>50 - 60 minutes</v-card-subtitle>
-              </v-row>
-              <v-row class="pl-4 pr-12" justify="space-between"> 
-                <v-card-subtitle class="mr-12">Battery Life</v-card-subtitle>
-                <v-card-subtitle>500 charges</v-card-subtitle>
-              </v-row>
+                <v-col cols="12">
+                  <v-simple-table class="mb-3">
+                    <template v-slot:default>
+                      <tbody>
+                        <tr>
+                          <td>Model No.</td>
+                          <td>EOS7160-P</td>
+                        </tr>                        
+                        <tr>
+                          <td>Weight</td>
+                          <td>360g</td>
+                        </tr>
+                        <tr>
+                          <td>Dimensions</td>
+                          <td>Φ53 x H168mm</td>
+                        </tr>
+                        <tr>
+                          <td>Rechargable Battery</td>
+                          <td>Li-Polymer Battery (3.7V/1000mAh)</td>
+                        </tr>
+                        <tr>
+                          <td>Charger Input</td>
+                          <td>Input: 100-240V AC, 50/60Hz<br>Output: 5V/1A</td>
+                        </tr>
+                        <tr>
+                          <td>Concentration</td>
+                          <td>2.0 ppm</td>
+                        </tr>
+                        <tr>
+                          <td>Reservoir Size</td>
+                          <td>150ml (0.04 gal)</td>
+                        </tr>
+                        <tr>
+                          <td>Water Quaity</td>
+                          <td>Clean Tap Water<br>Mineral Water</td>
+                        </tr>
+                        <tr>
+                          <td>Water Temperature</td>
+                          <td>5 - 35&#176;C (41 - 95&#176;F)</td>
+                        </tr>
+                        <tr>
+                          <td>Ambient Temperature</td>
+                          <td>5 - 40&#176;C (41 - 104&#176;F)</td>
+                        </tr>
+                        <tr>
+                          <td>Charging Time</td>
+                          <td>50 - 60 minutes</td>
+                        </tr>
+                        <tr>
+                          <td>Battery Lift</td>
+                          <td>500 charges</td>
+                        </tr>
+                      </tbody>
+                    </template>
+                  </v-simple-table>
+                </v-col>
             </v-col>
           </v-row>
         </v-card>
@@ -301,9 +323,9 @@
       </v-col>
     </v-row>
     <v-row justify="center">
-      <h3>Ozone Effects on Specific Bacteria, Viruses, and Molds</h3>
       <v-row justify="center">
-        <v-col align="start" cols="6">
+        <v-col align="start" cols="10">
+        <h3 class="text-center mb-4">Ozone Effects on Specific Bacteria, Viruses, and Molds</h3>
           <p>
               Bacteria are microscopically small,
               single-cell creatures having a
@@ -339,6 +361,7 @@
         </v-col>
       </v-row>
 
+      <v-col cols="12">
       <v-simple-table class="mb-12">
         <template v-slot:default>
           <thead>
@@ -355,6 +378,7 @@
           </tbody>
         </template>
       </v-simple-table>
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -372,17 +396,11 @@
       }
     },
     methods: {
-      showCard: function(product) {
-        if (this.showProduct1 === true)
-          this.showProduct1 = false;
-        if (this.showProduct2 === true)
-          this.showProduct2 = false;
-          
-        if (product === "p1")
-          this.showProduct1 = !this.showProduct1;
-
-        if (product === "p2")
-          this.showProduct2 = !this.showProduct2;
+      toggleCard1: function( ) {
+        this.showProduct1 = !this.showProduct1;
+      },
+      toggleCard2: function( ) {
+        this.showProduct2 = !this.showProduct2;
       }
     }
   }
