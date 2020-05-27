@@ -1,39 +1,24 @@
 <template>
   <v-container fluid>
-    <v-row>
-      <v-col align="center">
-        <v-img src="../assets/BNA_Logo.png" max-height="100px" max-width="300px"/>
-        <h1>Welcome to Biosure North America</h1>
-        <p>Our website is currently under construction. In the meantime, check out our currently available products <br>and contact information for purchase inquiries.</p>
-      </v-col>
-    </v-row>
+    <v-app-bar fixed>
+      <v-row class="d-flex d-sm-none" justify="space-between" align="center"> 
+        <v-col>
+          <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        </v-col>
+        <v-col>
+          <v-img src="../assets/BNA_Logo.png" max-height="25px" max-width="75px"/>
+        </v-col>
+        <v-col>
+          <v-icon class=".material-icons" color="#00A3E0">shopping-cart</v-icon>
+        </v-col>
+      </v-row>
 
-    <v-divider/>
+      <v-row class="d-none d-sm-flex">
+        <v-img src="../assets/BNA_Logo.png" max-height="50px" max-width="150px"/>
+      </v-row>
+    </v-app-bar>
 
-    <v-row justify="center">
-      <v-col align="center"> 
-        <h1>Contact Us</h1>
-        <p></p>
-        <p>2020 Babcock Road</p>
-        <p>San Antonio, TX 78229</p>
-        <p>Office: (925)-238-8890</p>
-        <p>Email: angela.s@besgroups.com</p>
-      </v-col>
-
-      <v-col align="center">
-        <h1>About Us</h1>
-        <p></p>
-        <p>Proud Partner of BES Group.</p>
-        <a href="http://www.besgroups.com/home/">
-          <img src="../assets/BES_Logo.png" height="50px" width="150px"/>
-        </a>
-        <p class="mt-4">Please refer to BES Group for more information.</p>
-      </v-col>
-    </v-row>
-
-    <v-divider/>
-
-    <v-row>
+    <v-row class="mt-12">
       <v-col align="center">
         <h1>Products</h1>
       </v-col>
@@ -42,7 +27,16 @@
     <v-row>
       <v-col align="center">
         <v-card max-width="1000px"> 
-          <v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
+          <v-row justify="space-between" class="mx-3">
+            <v-card-title class="headline d-none d-sm-flex">Professional Ozone Sprayer</v-card-title>
+            <v-card-title class="d-none d-sm-flex">$375.00</v-card-title>
+          </v-row>
+          <v-row class="d-flex d-sm-none" justify="center">
+            <v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
+          </v-row>
+          <v-row class="d-flex d-sm-none" justify="center">
+            <v-card-title class="mb-n3 mt-n4">$375.00</v-card-title>
+          </v-row>
           <v-divider/>
           <v-row min-height="500px">
             <v-col align="start" cols="8">
@@ -61,7 +55,7 @@
                 - Rapid sanitation
                 <br>- Harmless to skin
                 <br>- Effective deodorization
-                <br>- Long lasting operation
+                <br>- Long-lasting operation
                 <br>- Eliminates the need for sanitizing chemicals
                 <br>- Helps reduce carbon footprint
               </v-card-subtitle>
@@ -71,15 +65,28 @@
             </v-col>
           </v-row>
 
+          <v-divider/>
+
           <v-card-actions>
-            <v-btn 
-              block 
-              large 
-              color="#55b236" 
-              class="white--text"
-              v-on:click="toggleCard1">
-              More Details
-            </v-btn>
+            <v-row justify="center">
+              <v-col align-self="center" cols="8">
+                <v-btn 
+                  large
+                  block
+                  color="#55b236" 
+                  class="white--text mb-4">
+                  Add To Cart
+                </v-btn>
+
+                <v-btn
+                  medium
+                  outlined 
+                  color="#00A3E0"
+                  v-on:click="toggleCard1">
+                  More Details
+                </v-btn>
+              </v-col>
+            </v-row>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -107,7 +114,7 @@
               </v-card-subtitle>
               <v-card-subtitle class="mb-n4">
                 Simply fill the bottle with 
-                clean tap water, the device will instantly convert ordinary water into 
+                clean tap water and the device will instantly convert ordinary water into 
                 dissolved ozone and active chlorine. Dissolved ozone is well-known for its fast 
                 and powerful sanitation performance, while active chlorine enables longer 
                 lasting result. 
@@ -153,7 +160,7 @@
                           <td>150ml (0.04 gal)</td>
                         </tr>
                         <tr>
-                          <td>Water Quaity</td>
+                          <td>Water Quality</td>
                           <td>Clean Tap Water<br>Mineral Water</td>
                         </tr>
                         <tr>
@@ -181,8 +188,17 @@
 
     <v-row>
       <v-col align="center">
-        <v-card max-width="1000px">
-          <v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
+        <v-card max-width="1000px"> 
+          <v-row justify="space-between" class="mx-3">
+            <v-card-title class="headline d-none d-sm-flex">Ozone Tumbler Plus</v-card-title>
+            <v-card-title class="d-none d-sm-flex">$320.00</v-card-title>
+          </v-row>
+          <v-row class="d-flex d-sm-none" justify="center">
+            <v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
+          </v-row>
+          <v-row class="d-flex d-sm-none" justify="center">
+            <v-card-title class="mb-n3 mt-n4">$320.00</v-card-title>
+          </v-row>
           <v-divider/>
           <v-row min-height="500px">
             <v-col align="start" cols="8">
@@ -198,8 +214,7 @@
 
               <v-card-title>Benefits</v-card-title>
               <v-card-subtitle>
-                - Ideal replacement to chemical based mouthwash liquid
-                <br>- Easy to use for home, office, and travel 
+                - Easy to use for home, office, and travel 
                 <br>- Natural and powerful sanitizer
                 <br>- No irritating chemical formula
                 <br>- Fully integrated and easy to use anywhere and anytime
@@ -210,16 +225,29 @@
               <v-img src="../assets/P2_Product.png" max-height="400px" max-width="100px"/>
             </v-col>
           </v-row>
+
+          <v-divider/>
           
           <v-card-actions>
-            <v-btn 
-              block 
-              large 
-              color="#55b236" 
-              class="white--text" 
-              v-on:click="toggleCard2">
-              More Details
-            </v-btn>
+            <v-row justify="center">
+              <v-col align-self="center" cols="8">
+                <v-btn 
+                  large
+                  block
+                  color="#55b236" 
+                  class="white--text mb-4">
+                  Add To Cart
+                </v-btn>
+
+                <v-btn
+                  medium
+                  outlined 
+                  color="#00A3E0"
+                  v-on:click="toggleCard2">
+                  More Details
+                </v-btn>
+              </v-col>
+            </v-row>
           </v-card-actions>
         </v-card>
       </v-col>
@@ -301,7 +329,7 @@
                           <td>50 - 60 minutes</td>
                         </tr>
                         <tr>
-                          <td>Battery Lift</td>
+                          <td>Battery Life</td>
                           <td>500 charges</td>
                         </tr>
                       </tbody>
@@ -314,6 +342,30 @@
       </v-col>
     </v-row>
     </v-expand-transition>
+
+    <v-divider/>
+
+    <v-row justify="center">
+      <v-col align="center"> 
+        <h1>Contact Us</h1>
+        <p></p>
+        <p>2020 Babcock Road</p>
+        <p>San Antonio, TX 78229</p>
+        <p></p>
+        <p>Office: <a href="tel:+9252388890">(925)-238-8890</a></p>
+        <p>Email: <a href="mailto:angela.s@besgroups.com">angela.s@besgroups.com</a></p>
+      </v-col>
+
+      <v-col align="center">
+        <h1>About Us</h1>
+        <p></p>
+        <p>Proud Partner of BES Group</p>
+        <a href="http://www.besgroups.com/home/">
+          <img src="../assets/BES_Logo.png" height="50px" width="150px"/>
+        </a>
+        <p class="mt-4">Please refer to BES Group for more information.</p>
+      </v-col>
+    </v-row>
 
     <v-divider/>
 
