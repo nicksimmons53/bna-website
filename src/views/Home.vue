@@ -1,22 +1,6 @@
 <template>
   <v-container fluid>
-    <v-app-bar fixed>
-      <v-row class="d-flex d-sm-none" justify="space-between" align="center"> 
-        <v-col>
-          <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        </v-col>
-        <v-col>
-          <v-img src="../assets/BNA_Logo.png" max-height="25px" max-width="75px"/>
-        </v-col>
-        <v-col>
-          <v-icon class=".material-icons" color="#00A3E0">shopping-cart</v-icon>
-        </v-col>
-      </v-row>
-
-      <v-row class="d-none d-sm-flex">
-        <v-img src="../assets/BNA_Logo.png" max-height="50px" max-width="150px"/>
-      </v-row>
-    </v-app-bar>
+    <NavBar/>
 
     <v-row class="mt-12">
       <v-col align="center">
@@ -35,7 +19,7 @@
             <v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
           </v-row>
           <v-row class="d-flex d-sm-none" justify="center">
-            <v-card-title class="mb-n3 mt-n4">$375.00</v-card-title>
+            <v-card-title class="mb-n3 mt-n4">$380.00</v-card-title>
           </v-row>
           <v-divider/>
           <v-row min-height="500px">
@@ -191,13 +175,13 @@
         <v-card max-width="1000px"> 
           <v-row justify="space-between" class="mx-3">
             <v-card-title class="headline d-none d-sm-flex">Ozone Tumbler Plus</v-card-title>
-            <v-card-title class="d-none d-sm-flex">$320.00</v-card-title>
+            <v-card-title class="d-none d-sm-flex">$330.00</v-card-title>
           </v-row>
           <v-row class="d-flex d-sm-none" justify="center">
             <v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
           </v-row>
           <v-row class="d-flex d-sm-none" justify="center">
-            <v-card-title class="mb-n3 mt-n4">$320.00</v-card-title>
+            <v-card-title class="mb-n3 mt-n4">$330.00</v-card-title>
           </v-row>
           <v-divider/>
           <v-row min-height="500px">
@@ -345,27 +329,7 @@
 
     <v-divider/>
 
-    <v-row justify="center">
-      <v-col align="center"> 
-        <h1>Contact Us</h1>
-        <p></p>
-        <p>2020 Babcock Road</p>
-        <p>San Antonio, TX 78229</p>
-        <p></p>
-        <p>Office: <a href="tel:+9252388890">(925)-238-8890</a></p>
-        <p>Email: <a href="mailto:angela.s@besgroups.com">angela.s@besgroups.com</a></p>
-      </v-col>
-
-      <v-col align="center">
-        <h1>About Us</h1>
-        <p></p>
-        <p>Proud Partner of BES Group</p>
-        <a href="http://www.besgroups.com/home/">
-          <img src="../assets/BES_Logo.png" height="50px" width="150px"/>
-        </a>
-        <p class="mt-4">Please refer to BES Group for more information.</p>
-      </v-col>
-    </v-row>
+    <Footer/>
 
     <v-divider/>
 
@@ -437,6 +401,8 @@
 
 <script>
   import pathogens from '../data/data.js'
+  import NavBar from '../components/NavBar'
+  import Footer from '../components/Footer'
 
   export default {
     name: 'Home',
@@ -454,6 +420,10 @@
       toggleCard2: function( ) {
         this.showProduct2 = !this.showProduct2;
       }
+    },
+    components: {
+      NavBar,
+      Footer
     }
   }
 </script>
