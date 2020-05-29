@@ -274,9 +274,6 @@
 							into a natural ozonated water. It is a safe and powerful natural sanitizer for 
 							oral rinsing that is effective at reducing oral germs and helps remove bad breath.
 						</v-card-subtitle>
-						<v-card-subtitle class="mb-n4">
-							It is recommended by leading dentists to help improve everyday oral care.
-						</v-card-subtitle>
 					</v-col>
 					<v-divider vertical/>
 					<v-col align="start">
