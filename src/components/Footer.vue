@@ -27,3 +27,15 @@
         name: 'Footer'
     };
 </script>
+
+<style scoped>
+  .home {
+    padding-top: 32px;
+  }
+  h1 {
+    color: #00A3E0;
+  }
+  .img {
+    border-radius: 5px;
+  }
+</style>
