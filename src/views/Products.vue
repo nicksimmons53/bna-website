@@ -28,7 +28,7 @@
 			<v-card max-width="1000px"> 
 				<v-row justify="space-between" class="mx-3">
 					<v-card-title class="headline d-none d-sm-flex">Professional Ozone Sprayer</v-card-title>
-					<v-card-title class="d-none d-sm-flex">$380.00</v-card-title>
+					<v-card-title class="d-none d-sm-flex">Introductory Price: $399.00</v-card-title>
 				</v-row>
 				<v-row class="d-flex d-sm-none" justify="center">
 					<v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
@@ -69,6 +69,7 @@
 				<v-card-actions>
 					<v-row justify="center">
 						<v-col align-self="center" cols="8">
+							<!--
 							<v-btn 
 								large
 								block
@@ -77,6 +78,7 @@
 								@click="sprayerCheckout( )">
 								Purchase
 							</v-btn>
+							-->
 
 							<v-btn
 								medium
@@ -191,7 +193,7 @@
 			<v-card max-width="1000px"> 
 				<v-row justify="space-between" class="mx-3">
 					<v-card-title class="headline d-none d-sm-flex">Ozone Tumbler Plus</v-card-title>
-					<v-card-title class="d-none d-sm-flex">$330.00</v-card-title>
+					<v-card-title class="d-none d-sm-flex">Introductory Price: $349.00</v-card-title>
 				</v-row>
 				<v-row class="d-flex d-sm-none" justify="center">
 					<v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
@@ -231,6 +233,7 @@
 				<v-card-actions>
 					<v-row justify="center">
 						<v-col align-self="center" cols="8">
+							<!--
 							<v-btn 
 								large
 								block
@@ -239,6 +242,7 @@
 								@click="tumblerCheckout( )">
 								Purchase
 							</v-btn>
+							-->
 
 							<v-btn
 								medium
@@ -373,12 +377,12 @@
 					toggleNavDrawer( ) {
 						this.drawer = !this.drawer;
 					},
-					sprayerCheckout( ) {
-						window.open("https://checkout.square.site/buy/PWGH22OU7JRRZBDQOTY5X7TJ");
-					},
-					tumblerCheckout( ) {
-						window.open("https://checkout.square.site/buy/O3NLUL677EPTXIGKUHRTZYP6");
-					}
+					// sprayerCheckout( ) {
+					// 	window.open("https://checkout.square.site/buy/PWGH22OU7JRRZBDQOTY5X7TJ");
+					// },
+					// tumblerCheckout( ) {
+					// 	window.open("https://checkout.square.site/buy/O3NLUL677EPTXIGKUHRTZYP6");
+					// }
 				},
 		};
 </script>
