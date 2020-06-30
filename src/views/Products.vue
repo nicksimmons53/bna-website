@@ -34,7 +34,7 @@
 					<v-card-title class="headline">Professional Ozone Sprayer</v-card-title>
 				</v-row>
 				<v-row class="d-flex d-sm-none" justify="center">
-					<v-card-title class="mb-n3 mt-n4">$380.00</v-card-title>
+					<v-card-title class="mb-n3 mt-n4">$399.00</v-card-title>
 				</v-row>
 				<v-divider/>
 				<v-row min-height="500px">
@@ -199,7 +199,7 @@
 					<v-card-title class="headline">Ozone Tumbler Plus</v-card-title>
 				</v-row>
 				<v-row class="d-flex d-sm-none" justify="center">
-					<v-card-title class="mb-n3 mt-n4">$330.00</v-card-title>
+					<v-card-title class="mb-n3 mt-n4">$349.00</v-card-title>
 				</v-row>
 				<v-divider/>
 				<v-row min-height="500px">
